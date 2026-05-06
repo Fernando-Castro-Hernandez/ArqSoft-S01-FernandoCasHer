@@ -1,0 +1,30 @@
+﻿@model Catalogo.Models.Item
+
+<h1>Agregar carta</h1>
+
+<form asp-action="Agregar" method="post">
+    <div>
+        <label>Nombre</label>
+        <input asp-for="Nombre" />
+    </div>
+    <div>
+        <label>Elixir</label>
+        <input asp-for="Elixir" type="number" min="1" max="10" />
+    </div>
+    <div>
+        <label>Calidad</label>
+        <input asp-for="Calidad" />
+    </div>
+    <div>
+        <label>Tipo</label>
+        <input asp-for="Tipo" />
+    </div>
+    <div>
+        <label>Arena</label>
+        <input asp-for="Arena" type="number" min="0" />
+    </div>
+    <button type="submit">Guardar</button>
+</form>
+
+<hr />
+<a asp-action="Index">&larr; Cancelar</a>
