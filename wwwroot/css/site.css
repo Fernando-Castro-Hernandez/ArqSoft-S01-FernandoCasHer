@@ -369,3 +369,410 @@
         transform: translateY(4px);
         box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.4), 0 2px 0 #1b5e20;
     }
+/* ============================================
+   LAYOUT GLOBAL - NAVBAR Y FOOTER
+   ============================================ */
+
+body {
+    background: linear-gradient(180deg, #1a468d 0%, #0f2d5c 100%);
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Override del navbar de Bootstrap para que sea estilo Clash */
+.cr-navbar {
+    background: linear-gradient(180deg, #2a5db0 0%, #1a468d 100%) !important;
+    border-bottom: 4px solid #f9d423 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    padding: 12px 20px;
+}
+
+    .cr-navbar .navbar-brand {
+        font-family: 'Lilita One', 'Arial Black', sans-serif;
+        color: #f9d423 !important;
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    }
+
+    .cr-navbar .nav-link {
+        font-family: 'Lilita One', 'Arial Black', sans-serif;
+        color: #fff !important;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 0 #000;
+        padding: 8px 16px !important;
+        transition: color 0.15s ease;
+    }
+
+        .cr-navbar .nav-link:hover {
+            color: #f9d423 !important;
+        }
+
+/* Que el contenedor principal no tenga el fondo blanco de Bootstrap */
+.container {
+    background: transparent;
+}
+
+/* Footer estilizado */
+.cr-footer {
+    background: rgba(0, 0, 0, 0.4);
+    border-top: 3px solid #f9d423 !important;
+    color: #f9d423 !important;
+    font-family: 'Lilita One', 'Arial Black', sans-serif;
+    text-shadow: 1px 1px 0 #000;
+    padding: 15px 0;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+    .cr-footer a {
+        color: #fff !important;
+        text-decoration: none;
+    }
+
+        .cr-footer a:hover {
+            color: #f9d423 !important;
+            text-decoration: underline;
+        }
+
+/* ============================================
+   LANDING (HOME)
+   ============================================ */
+
+.cr-landing {
+    text-align: center;
+    padding: 60px 20px;
+    color: #fff;
+    font-family: 'Lilita One', 'Arial Black', sans-serif;
+}
+
+.cr-landing-titulo {
+    color: #f9d423;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    text-shadow: 4px 4px 0 #000, -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 0 8px 0 #8a4a00;
+}
+
+.cr-landing-subtitulo {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 #000;
+}
+
+.cr-landing-descripcion {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #e3e3e3;
+    text-shadow: 1px 1px 0 #000;
+}
+
+.cr-cta-grande {
+    display: inline-block;
+    background: linear-gradient(180deg, #ffd54f 0%, #ffb300 50%, #f57c00 100%);
+    color: #4a2800 !important;
+    padding: 18px 50px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    border: 3px solid #4a2800;
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.5), 0 8px 0 #8a4a00, 0 12px 16px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.4);
+    letter-spacing: 2px;
+    transition: all 0.1s ease;
+}
+
+    .cr-cta-grande:hover {
+        background: linear-gradient(180deg, #ffe082 0%, #ffc107 50%, #ff9800 100%);
+        color: #4a2800 !important;
+        text-decoration: none;
+    }
+
+    .cr-cta-grande:active {
+        transform: translateY(6px);
+        box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.5), 0 2px 0 #8a4a00;
+    }
+
+/* ============================================
+   PRIVACY
+   ============================================ */
+
+.cr-privacy {
+    max-width: 700px;
+    margin: 30px auto;
+    background: linear-gradient(180deg, #2a5db0 0%, #1a468d 50%, #0f2d5c 100%);
+    border: 5px solid #f9d423;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2), inset 0 -4px 12px rgba(0, 0, 0, 0.5), 0 8px 0 #8a4a00, 0 12px 20px rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-family: 'Lilita One', 'Arial Black', sans-serif;
+}
+
+    .cr-privacy h1 {
+        color: #f9d423;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+        text-shadow: 3px 3px 0 #000, -2px -2px 0 #000;
+    }
+
+    .cr-privacy p {
+        color: #e3e3e3;
+        font-size: 1.05rem;
+        line-height: 1.7;
+        text-shadow: 1px 1px 0 #000;
+        margin-bottom: 15px;
+    }
+/* ============================================
+   ANIMACIONES Y EFECTOS
+   ============================================ */
+
+/* === LLUVIA DE ELIXIR (fondo animado) === */
+.cr-rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.cr-drop {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: radial-gradient(circle at 30% 30%, #ff6ee0, #d946c4 50%, #8a1d7a);
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    opacity: 0.4;
+    box-shadow: 0 0 8px rgba(217, 70, 196, 0.6);
+    animation: cr-fall linear infinite;
+}
+
+@keyframes cr-fall {
+    0% {
+        transform: translateY(-50px) rotate(-45deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.5;
+    }
+
+    90% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(110vh) rotate(-45deg);
+        opacity: 0;
+    }
+}
+
+/* Asegurar que el contenido vaya arriba de la lluvia */
+.container, header, footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* === BRILLO DORADO EN CARTAS (efecto shine) === */
+.cr-card {
+    overflow: hidden;
+}
+
+    .cr-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 60%;
+        height: 100%;
+        background: linear-gradient( 90deg, transparent 0%, rgba(249, 212, 35, 0.3) 50%, transparent 100% );
+        transform: skewX(-20deg);
+        animation: cr-shine 4s ease-in-out infinite;
+        pointer-events: none;
+        z-index: 2;
+    }
+
+@keyframes cr-shine {
+    0%, 100% {
+        left: -100%;
+    }
+
+    50% {
+        left: 200%;
+    }
+}
+
+/* === APARICIÓN ESCALONADA DE CARTAS === */
+.cr-card {
+    opacity: 0;
+    transform: translateY(40px) scale(0.8);
+    animation: cr-card-in 0.5s ease-out forwards;
+}
+
+@keyframes cr-card-in {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Cada carta arranca con un delay diferente */
+.cr-card:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.cr-card:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.cr-card:nth-child(3) {
+    animation-delay: 0.25s;
+}
+
+.cr-card:nth-child(4) {
+    animation-delay: 0.35s;
+}
+
+.cr-card:nth-child(5) {
+    animation-delay: 0.45s;
+}
+
+.cr-card:nth-child(6) {
+    animation-delay: 0.55s;
+}
+
+.cr-card:nth-child(7) {
+    animation-delay: 0.65s;
+}
+
+.cr-card:nth-child(8) {
+    animation-delay: 0.75s;
+}
+
+.cr-card:nth-child(9) {
+    animation-delay: 0.85s;
+}
+
+.cr-card:nth-child(10) {
+    animation-delay: 0.95s;
+}
+
+/* === EFECTO TILT 3D (preparación para JS) === */
+.cr-card {
+    transform-style: preserve-3d;
+    transition: transform 0.15s ease-out;
+}
+
+/* === RESPIRACIÓN DEL TÍTULO === */
+.cr-title, .cr-landing-titulo {
+    animation: cr-breathe 3s ease-in-out infinite;
+}
+
+@keyframes cr-breathe {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+}
+
+/* === ENTRADA SUAVE DEL CONTENIDO === */
+.cr-page, .cr-landing, .cr-privacy, .cr-form {
+    animation: cr-fade-in 0.6s ease-out;
+}
+
+@keyframes cr-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* === EFECTO RIPPLE PARA FILTROS === */
+.cr-filtro {
+    position: relative;
+    overflow: hidden;
+}
+
+.cr-ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(0);
+    animation: cr-ripple-anim 0.6s ease-out;
+    pointer-events: none;
+}
+
+@keyframes cr-ripple-anim {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* === PARTÍCULAS DE EXPLOSIÓN === */
+.cr-particle {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, #ff6ee0, #d946c4);
+    border-radius: 50% 50% 50% 0;
+    pointer-events: none;
+    z-index: 9999;
+    box-shadow: 0 0 8px rgba(217, 70, 196, 0.8);
+}
+
+/* === CONFETTI DORADO === */
+.cr-confetti {
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    pointer-events: none;
+    z-index: 9999;
+    animation: cr-confetti-fall 2s linear forwards;
+}
+
+@keyframes cr-confetti-fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* === HOVER MEJORADO EN CTA === */
+.cr-cta-grande {
+    animation: cr-pulse 2s ease-in-out infinite;
+}
+
+@keyframes cr-pulse {
+    0%, 100% {
+        box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.5), 0 8px 0 #8a4a00, 0 12px 16px rgba(0, 0, 0, 0.5);
+    }
+
+    50% {
+        box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.5), 0 8px 0 #8a4a00, 0 12px 30px rgba(249, 212, 35, 0.8);
+    }
+}
