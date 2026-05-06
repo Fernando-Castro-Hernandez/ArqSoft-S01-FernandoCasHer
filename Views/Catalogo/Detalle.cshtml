@@ -1,11 +1,32 @@
 ﻿@model Catalogo.Models.Item
 
-<h1>@Model.Nombre</h1>
+<div class="cr-page">
+    <div class="cr-card-detalle">
+        <div class="cr-elixir-grande">
+            <span class="cr-elixir-num">@Model.Elixir</span>
+        </div>
 
-<p><strong>Tipo:</strong> @Model.Tipo</p>
-<p><strong>Elixir:</strong> @Model.Elixir</p>
-<p><strong>Calidad:</strong> @Model.Calidad</p>
-<p><strong>Arena:</strong> @Model.Arena</p>
+        <h1 class="cr-nombre-grande">@Model.Nombre</h1>
 
-<hr />
-<a asp-action="Index">&larr; Volver al Catálogo</a>
+        <div class="cr-stat">
+            <span class="cr-stat-label">Tipo</span>
+            <span class="cr-stat-value">@Model.Tipo</span>
+        </div>
+        <div class="cr-stat">
+            <span class="cr-stat-label">Calidad</span>
+            <span class="cr-stat-value">@Model.Calidad</span>
+        </div>
+        <div class="cr-stat">
+            <span class="cr-stat-label">Elixir</span>
+            <span class="cr-stat-value">@Model.Elixir</span>
+        </div>
+        <div class="cr-stat">
+            <span class="cr-stat-label">Arena</span>
+            <span class="cr-stat-value">@Model.Arena</span>
+        </div>
+    </div>
+
+    <div class="cr-volver-wrapper">
+        <a class="cr-volver" asp-action="Index">&larr; Volver al Catálogo</a>
+    </div>
+</div>
