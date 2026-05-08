@@ -92,6 +92,9 @@ Catalogo/
 ├── Catalogo.csproj
 └── README.md
 ```
+### Para la realizacion de esta actividad se recurrio al uso de LLM´s para la creacion de la interfaz visual y el frontend
+
+
 
 ## Autor
 
